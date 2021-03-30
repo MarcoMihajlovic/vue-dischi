@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-color: #2e3a46;
     height: 50px;
@@ -22,6 +26,18 @@ main {
     overflow-y: hidden;
 }
 
+.main-header {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.filtro {
+    margin: 0 auto;
+    width: 200px;
+    color: white;
+}
+
+
 #cards {
     display: flex;
     justify-content: space-around;
@@ -34,7 +50,7 @@ main {
     max-height: 300px;
     max-width: 200px;
     width: 200px;
-    height: 300px;
+    height: 290px;
     margin: 10px;
     display: flex;
     flex-flow: column;
@@ -45,6 +61,7 @@ main {
 .card > h2 {
     margin-top: 10px;
     color: white;
+    text-align: center;
 }
 
 .card > span {

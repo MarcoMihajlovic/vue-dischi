@@ -20,8 +20,17 @@
         </header>
 
         <main>
+            <div class="main-header">
+                <div class="filtro">
+                    <label for="type">Filtra per tipo</label>
+                <select v-model="filterGenre" name="type" id="type">
+                    <option value="all">All</option>
+                    <option v-for="type in types" :value="type">{{type}}</option>
+                </select>
+                </div>
+            </div>
             <div id="cards">
-                <div class="card" v-for="(album, index) in albums">
+                <div class="card" v-for="(album, index) in getAlbums()">
                     <div class="poster">
                         <img :src="album.poster" alt="">
                     </div>
